@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill"
+        android:background="#37949191"
+        android:gravity="fill_vertical"
+        android:orientation="vertical"
+        app:layout_anchorGravity="fill"
+        tools:context=".game1">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dip"
+        android:gravity="center"
+        android:text="Player O winner"
+        android:textColor="#141313"
+        android:textSize="24sp" />
+
+    <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="40dip"
+            android:gravity="center"
+            android:text="Second Diagnal"
+            android:textColor="#141313"
+            android:textSize="24sp" />
+
+    <GridLayout
+        android:id="@+id/gridofpics"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top|center_vertical"
+        android:columnCount="2"
+        android:foregroundGravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/ib1"
+            android:layout_width="194dp"
+            android:layout_height="155dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:drawingCacheQuality="low"
+            android:fadeScrollbars="false"
+            android:focusable="auto"
+            android:focusableInTouchMode="false"
+            android:keepScreenOn="true"
+            android:onClick="onClick"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/elephant" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="183dp"
+            android:layout_height="155dp"
+            android:adjustViewBounds="true"
+            android:onClick="onClick"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/lion" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="194dp"
+            android:layout_height="142dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/zebra" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="183dp"
+            android:layout_height="142dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/dog" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="194dp"
+            android:layout_height="148dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/snake2" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="183dp"
+            android:layout_height="148dp"
+
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/rabbit" />
+    </GridLayout>
+
+</LinearLayout>
